@@ -1,0 +1,19 @@
+<!--Take input from the name text box and validate to check if it contains only alphabets or not. If it does not
+contain, display the error message next to the text box “please enter only alphabets”.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS in HTML Example</title>
+        <script src="handson2.js"></script>
+    </head>
+    <body>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <p id="errorMessage" style="color: red;"></p>
+            <input type="button" value="Submit" onclick="validateForm()">
+        </form>
+        
+        <p>This form will trigger a JavaScript function when submitted.</p>
+    </body>
+</html>

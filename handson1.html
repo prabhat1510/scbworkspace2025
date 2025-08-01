@@ -1,0 +1,31 @@
+<!--Create an array of strings and display its values in list format in browser.-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example One</title>
+        
+    </head>
+    <body>
+        <p>Create an array of strings and display its values in list format in browser.</p>
+        <script>
+            var greetings = ["Hello", "Hi", "Welcome", "Good Morning", "Good Evening"];
+            var list = "<ul>";
+            for (var i = 0; i < greetings.length; i++) {
+                list += "<li>" + greetings[i] + "</li>";
+            }
+            list += "</ul>";
+            document.body.innerHTML += list;
+            console.log("Greetings displayed in list format.");
+            // Create an array of fruits and display its values in list format
+            let fruits = ["Apple", "Banana", "Cherry", "Date"];
+            let fruitList = "<ul>";
+            for (let i = 0; i < fruits.length; i++) {
+                fruitList += "<li>" + fruits[i] + "</li>";
+            }
+            fruitList += "</ul>";
+            document.body.innerHTML += fruitList;
+            console.log("Fruits displayed in list format.");
+        </script>
+        <p>Check the console for messages.</p>
+    </body>
+</html>
