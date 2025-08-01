@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Customer Form</title>
+        <script src="customerform.js"></script>
+    </head>
+    <body>
+        <form   id="customerForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Contact No:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="acctype">Account Type:</label>
+            <select id="acctype" name="acctype">
+                <option value="select">Select Account Type</option>
+                <option value="savings">Savings</option>
+                <option value="current">Current</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </body>
+</html>
